@@ -118,7 +118,7 @@
         }
 
         .hero-text h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(2.5rem, 5vw, 3.8rem);
             font-weight: 800;
             color: white;
             margin-bottom: 30px;
@@ -429,18 +429,17 @@
 
         .form-label {
             position: absolute;
-            top: 50%;
+            top: 20px;
             left: 20px;
-            transform: translateY(-50%);
+            transform: translateY(0);
             color: #666;
             font-weight: 500;
             transition: all 0.3s ease;
             pointer-events: none;
-            background: #f8f9ff; /* Match input background */
+            background: #f8f9ff;
             padding: 0 8px;
         }
-        
-        /* Corrected label behavior logic */
+       
        .form-input:focus + .form-label,
        .form-input:not(:placeholder-shown) + .form-label,
        .form-select:valid + .form-label,
@@ -488,10 +487,9 @@
 
         /* Responsive Design */
         @media (max-width: 968px) {
-            .hero-content, .interview-content, .form-grid, .companies-grid { grid-template-columns: 1fr; }
-            .hero-content { text-align: center; }
+            .hero-content, .interview-content, .form-grid, .companies-grid, div[style*="grid-template-columns: repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
+            .hero-content { text-align: center; gap: 40px; }
             .nav-links { display: none; }
-            .animate-on-scroll div[style*="grid-template-columns: repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
         }
 
         @media (max-width: 768px) {
@@ -518,162 +516,159 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Is finding trustworthy suppliers in Europe slowing your business down?</h1>
-                        <p>Join our exclusive research on B2B procurement. Help us understand the real challenges of sourcing in Europe and get valuable insights to build a more resilient and sustainable supply chain.</p>
-                        <a href="#contact" class="cta-button">
-                            📞 Share Your Sourcing Experience
-                            <span>→</span>
-                        </a>
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Is finding trustworthy suppliers in Europe slowing your business down?</h1>
+                    <p>Join our exclusive research on B2B procurement. Help us understand the real challenges of sourcing in Europe and get valuable insights to build a more resilient and sustainable supply chain.</p>
+                    <a href="#contact" class="cta-button">
+                        📞 Share Your Sourcing Experience
+                        <span>→</span>
+                    </a>
+                </div>
+                <div class="hero-visual">
+                    <div class="stats-grid floating">
+                        <div class="stat-card"><span class="stat-number">500+</span><span class="stat-label">Companies Interviewed</span></div>
+                        <div class="stat-card"><span class="stat-number">27</span><span class="stat-label">EU Countries Covered</span></div>
+                        <div class="stat-card"><span class="stat-number">92%</span><span class="stat-label">Sourcing Efficiency Reported</span></div>
+                        <div class="stat-card"><span class="stat-number">30 min</span><span class="stat-label">Interview Duration</span></div>
                     </div>
-                    <div class="hero-visual">
-                        <div class="stats-grid floating">
-                            <div class="stat-card"><span class="stat-number">500+</span><span class="stat-label">Companies Interviewed</span></div>
-                            <div class="stat-card"><span class="stat-number">27</span><span class="stat-label">EU Countries Covered</span></div>
-                            <div class="stat-card"><span class="stat-number">92%</span><span class="stat-label">Sourcing Efficiency Reported</span></div>
-                            <div class="stat-card"><span class="stat-number">30 min</span><span class="stat-label">Interview Duration</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <section class="section" id="challenges">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">The Core Sourcing Challenges We're Investigating</h2>
+                <p class="section-subtitle animate-on-scroll">Understanding the key barriers to building efficient, resilient, and sustainable supply chains in Europe.</p>
+                <div class="challenges-grid">
+                    <div class="challenge-card animate-on-scroll">
+                        <div class="challenge-icon">🛡️</div>
+                        <h3>Supplier Reliability & Risk</h3>
+                        <p>Managing the time-consuming process of vetting new suppliers, verifying certifications, and mitigating risks of disruption in your supply chain.</p>
+                    </div>
+                    <div class="challenge-card animate-on-scroll">
+                        <div class="challenge-icon">🌿</div>
+                        <h3>ESG & Sustainability Compliance</h3>
+                        <p>Navigating the complex requirements of the EU Green Deal, tracking supplier sustainability metrics, and ensuring your supply chain is compliant and ethical.</p>
+                    </div>
+                    <div class="challenge-card animate-on-scroll">
+                        <div class="challenge-icon">🔗</div>
+                        <h3>Supply Chain Resilience</h3>
+                        <p>Diversifying your supplier base to avoid single points of failure, adapting to geopolitical shifts, and building a supply network that can withstand shocks.</p>
+                    </div>
+                    <div class="challenge-card animate-on-scroll">
+                        <div class="challenge-icon">💡</div>
+                        <h3>Sourcing Innovation</h3>
+                        <p>Discovering innovative suppliers with cutting-edge technology, new materials, or more efficient processes to gain a competitive advantage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section companies-section" id="industries">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">We're interviewing buyers and distributors from:</h2>
+                <div class="companies-grid">
+                     <div class="company-category animate-on-scroll"><div class="category-icon">💊</div><h3>Healthcare & Medical</h3><p>Distributors, hospital procurement, med-tech companies</p></div>
+                     <div class="company-category animate-on-scroll"><div class="category-icon">🏭</div><h3>Manufacturing & Industrial</h3><p>OEMs, factory procurement, heavy machinery buyers</p></div>
+                     <div class="company-category animate-on-scroll"><div class="category-icon">💻</div><h3>Technology & Software</h3><p>Hardware manufacturers, system integrators, large IT departments</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section interview-section" id="interview">
+            <div class="container">
+                <div class="interview-content">
+                    <div class="animate-on-scroll">
+                        <h2 class="section-title" style="text-align: left; color: white;">Share Your Experience in a 30-Minute Sourcing Interview</h2>
+                        <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 40px;">Help us map the future of B2B procurement and get valuable benchmarks for your own sourcing strategy.</p>
+                        <ul class="interview-features">
+                            <li><div class="feature-icon">⏱️</div><div><strong>Quick & Efficient</strong><br>Only 30 minutes of your time via video call</div></li>
+                            <li><div class="feature-icon">🎯</div><div><strong>Personalized Insights</strong><br>Get tailored recommendations for your sourcing challenges</div></li>
+                            <li><div class="feature-icon">🤝</div><div><strong>Confidential & Secure</strong><br>Your data is protected and anonymized</div></li>
+                            <li><div class="feature-icon">📊</div><div><strong>Research Results</strong><br>Access to final study findings and benchmarks</div></li>
+                        </ul>
+                    </div>
+                    <div class="animate-on-scroll">
+                        <div style="background: linear-gradient(135deg, #a8e6cf, #88d8a3); border-radius: 20px; padding: 40px; text-align: center; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: #2c5530;">What we'll discuss:</h3>
+                            <div style="display: grid; gap: 15px; text-align: left;">
+                                <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">Your strategy for finding and vetting new European suppliers</span></div>
+                                <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">The biggest risks you face in your current supply chain</span></div>
+                                <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">The role of sustainability (ESG) in your procurement process</span></div>
+                                <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">Tools and platforms you currently use for supplier management</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="main-content">
-            <section class="section" id="challenges">
-                <div class="container">
-                    <h2 class="section-title animate-on-scroll">The Core Sourcing Challenges We're Investigating</h2>
-                    <p class="section-subtitle animate-on-scroll">Understanding the key barriers to building efficient, resilient, and sustainable supply chains in Europe.</p>
-                    <div class="challenges-grid">
-                        <div class="challenge-card animate-on-scroll">
-                            <div class="challenge-icon">🛡️</div>
-                            <h3>Supplier Reliability & Risk</h3>
-                            <p>Managing the time-consuming process of vetting new suppliers, verifying certifications, and mitigating risks of disruption in your supply chain.</p>
+        <section class="section form-section" id="contact">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Schedule Your Sourcing Interview</h2>
+                <p class="section-subtitle animate-on-scroll">Book a 30-minute slot and contribute to groundbreaking research on the future of European procurement.</p>
+                <div class="form-container animate-on-scroll">
+                    <form id="interviewForm">
+                        <div class="form-grid">
+                            <div class="form-group"><input type="text" id="firstName" class="form-input" placeholder=" " required><label for="firstName" class="form-label">First Name</label></div>
+                            <div class="form-group"><input type="text" id="lastName" class="form-input" placeholder=" " required><label for="lastName" class="form-label">Last Name</label></div>
+                            <div class="form-group"><input type="email" id="email" class="form-input" placeholder=" " required><label for="email" class="form-label">Email Address</label></div>
+                            <div class="form-group"><input type="tel" id="phone" class="form-input" placeholder=" "><label for="phone" class="form-label">Phone Number (Optional)</label></div>
+                            <div class="form-group"><input type="text" id="company" class="form-input" placeholder=" " required><label for="company" class="form-label">Company Name</label></div>
+                            <div class="form-group"><input type="text" id="position" class="form-input" placeholder=" " required><label for="position" class="form-label">Your Position</label></div>
+                            <div class="form-group full-width">
+                                <select id="industry" class="form-select" required><option value="" disabled selected></option><option value="healthcare">Healthcare & Medical</option><option value="manufacturing">Manufacturing & Industrial</option><option value="technology">Technology & Software</option><option value="other">Other</option></select>
+                                <label for="industry" class="form-label">Industry</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="companySize" class="form-select" required><option value="" disabled selected></option><option value="small">Small (11-50)</option><option value="medium">Medium (51-200)</option><option value="large">Large (201+)</option></select>
+                                <label for="companySize" class="form-label">Company Size</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="sourcingStage" class="form-select" required><option value="" disabled selected></option><option value="new_suppliers">Seeking new suppliers</option><option value="optimizing">Optimizing supplier base</option><option value="resilience">Building resilience</option><option value="sustainability">Focusing on ESG</option></select>
+                                <label for="sourcingStage" class="form-label">Sourcing Focus</label>
+                            </div>
+                            <div class="form-group full-width">
+                                <textarea id="challenges" class="form-textarea" placeholder=" "></textarea>
+                                <label for="challenges" class="form-label">Your main procurement challenges? (Optional)</label>
+                            </div>
                         </div>
-                        <div class="challenge-card animate-on-scroll">
-                            <div class="challenge-icon">🌿</div>
-                            <h3>ESG & Sustainability Compliance</h3>
-                            <p>Navigating the complex requirements of the EU Green Deal, tracking supplier sustainability metrics, and ensuring your supply chain is compliant and ethical.</p>
-                        </div>
-                        <div class="challenge-card animate-on-scroll">
-                            <div class="challenge-icon">🔗</div>
-                            <h3>Supply Chain Resilience</h3>
-                            <p>Diversifying your supplier base to avoid single points of failure, adapting to geopolitical shifts, and building a supply network that can withstand shocks.</p>
-                        </div>
-                        <div class="challenge-card animate-on-scroll">
-                            <div class="challenge-icon">💡</div>
-                            <h3>Sourcing Innovation</h3>
-                            <p>Discovering innovative suppliers with cutting-edge technology, new materials, or more efficient processes to gain a competitive advantage.</p>
-                        </div>
-                    </div>
+                        <button type="submit" class="submit-button">📅 Schedule My Interview Now</button>
+                        <p style="text-align: center; margin-top: 20px; color: #666; font-size: 0.9rem;">🔒 Your information is secure and will only be used for research purposes.</p>
+                    </form>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="section companies-section" id="industries">
-                <div class="container">
-                    <h2 class="section-title animate-on-scroll">We're interviewing buyers and distributors from:</h2>
-                    <div class="companies-grid">
-                         <div class="company-category animate-on-scroll"><div class="category-icon">💊</div><h3>Healthcare & Medical</h3><p>Distributors, hospital procurement, med-tech companies</p></div>
-                         <div class="company-category animate-on-scroll"><div class="category-icon">🏭</div><h3>Manufacturing & Industrial</h3><p>OEMs, factory procurement, heavy machinery buyers</p></div>
-                         <div class="company-category animate-on-scroll"><div class="category-icon">💻</div><h3>Technology & Software</h3><p>Hardware manufacturers, system integrators, large IT departments</p></div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section interview-section" id="interview">
-                <div class="container">
-                    <div class="interview-content">
-                        <div class="animate-on-scroll">
-                            <h2 class="section-title" style="text-align: left; color: white;">Share Your Experience in a 30-Minute Sourcing Interview</h2>
-                            <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 40px;">Help us map the future of B2B procurement and get valuable benchmarks for your own sourcing strategy.</p>
-                            <ul class="interview-features">
-                                <li><div class="feature-icon">⏱️</div><div><strong>Quick & Efficient</strong><br>Only 30 minutes of your time via video call</div></li>
-                                <li><div class="feature-icon">🎯</div><div><strong>Personalized Insights</strong><br>Get tailored recommendations for your sourcing challenges</div></li>
-                                <li><div class="feature-icon">🤝</div><div><strong>Confidential & Secure</strong><br>Your data is protected and anonymized</div></li>
-                                <li><div class="feature-icon">📊</div><div><strong>Research Results</strong><br>Access to final study findings and benchmarks</div></li>
-                            </ul>
+        <section class="section" style="background: linear-gradient(135deg, #f8f9ff, #fff); text-align: center;">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto;" class="animate-on-scroll">
+                    <h2 class="section-title">Our Research Promise</h2>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 50px;">
+                        <div style="padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                            <div style="font-size: 3rem; margin-bottom: 15px;">🎯</div>
+                            <h4>Actionable Insights</h4>
+                            <p style="color: #666;">Every participant receives personalized recommendations based on their specific situation and goals.</p>
                         </div>
-                        <div class="animate-on-scroll">
-                            <div style="background: linear-gradient(135deg, #a8e6cf, #88d8a3); border-radius: 20px; padding: 40px; text-align: center; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);">
-                                <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: #2c5530;">What we'll discuss:</h3>
-                                <div style="display: grid; gap: 15px; text-align: left;">
-                                    <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">Your strategy for finding and vetting new European suppliers</span></div>
-                                    <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">The biggest risks you face in your current supply chain</span></div>
-                                    <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">The role of sustainability (ESG) in your procurement process</span></div>
-                                    <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">Tools and platforms you currently use for supplier management</span></div>
-                                </div>
-                            </div>
+                        <div style="padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                            <div style="font-size: 3rem; margin-bottom: 15px;">🤝</div>
+                            <h4>Confidential Process</h4>
+                            <p style="color: #666;">All interviews are confidential, and company-specific information is anonymized in our research.</p>
+                        </div>
+                        <div style="padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                            <div style="font-size: 3rem; margin-bottom: 15px;">📊</div>
+                            <h4>Industry Benchmarks</h4>
+                            <p style="color: #666;">Compare your challenges and strategies against industry peers and successful market entrants.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="section form-section" id="contact">
-                <div class="container">
-                    <h2 class="section-title animate-on-scroll">Schedule Your Sourcing Interview</h2>
-                    <p class="section-subtitle animate-on-scroll">Book a 30-minute slot and contribute to groundbreaking research on the future of European procurement.</p>
-                    <div class="form-container animate-on-scroll">
-                        <form id="interviewForm">
-                            <div class="form-grid">
-                                <div class="form-group"><input type="text" id="firstName" class="form-input" placeholder=" " required><label for="firstName" class="form-label">First Name</label></div>
-                                <div class="form-group"><input type="text" id="lastName" class="form-input" placeholder=" " required><label for="lastName" class="form-label">Last Name</label></div>
-                                <div class="form-group"><input type="email" id="email" class="form-input" placeholder=" " required><label for="email" class="form-label">Email Address</label></div>
-                                <div class="form-group"><input type="tel" id="phone" class="form-input" placeholder=" "><label for="phone" class="form-label">Phone Number</label></div>
-                                <div class="form-group"><input type="text" id="company" class="form-input" placeholder=" " required><label for="company" class="form-label">Company Name</label></div>
-                                <div class="form-group"><input type="text" id="position" class="form-input" placeholder=" " required><label for="position" class="form-label">Your Position</label></div>
-                                <div class="form-group full-width">
-                                    <select id="industry" class="form-select" required><option value="" disabled selected></option><option value="healthcare">Healthcare & Medical</option><option value="manufacturing">Manufacturing & Industrial</option><option value="technology">Technology & Software</option><option value="other">Other</option></select>
-                                    <label for="industry" class="form-label">Industry</label>
-                                </div>
-                                <div class="form-group">
-                                    <select id="companySize" class="form-select" required><option value="" disabled selected></option><option value="small">Small (11-50)</option><option value="medium">Medium (51-200)</option><option value="large">Large (201+)</option></select>
-                                    <label for="companySize" class="form-label">Company Size</label>
-                                </div>
-                                <div class="form-group">
-                                    <select id="sourcingStage" class="form-select" required><option value="" disabled selected></option><option value="new_suppliers">Seeking new suppliers</option><option value="optimizing">Optimizing supplier base</option><option value="resilience">Building resilience</option><option value="sustainability">Focusing on ESG</option></select>
-                                    <label for="sourcingStage" class="form-label">Sourcing Focus</label>
-                                </div>
-                                <div class="form-group full-width">
-                                    <textarea id="challenges" class="form-textarea" placeholder=" "></textarea>
-                                    <label for="challenges" class="form-label">Your main procurement challenges? (Optional)</label>
-                                </div>
-                            </div>
-                            <button type="submit" class="submit-button">📅 Schedule My Interview Now</button>
-                            <p style="text-align: center; margin-top: 20px; color: #666; font-size: 0.9rem;">🔒 Your information is secure and will only be used for research purposes.</p>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="section" style="background: linear-gradient(135deg, #f8f9ff, #fff); text-align: center;">
-                <div class="container">
-                    <div style="max-width: 800px; margin: 0 auto;" class="animate-on-scroll">
-                        <h2 class="section-title">Our Research Promise</h2>
-                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 50px;">
-                            <div style="padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                                <div style="font-size: 3rem; margin-bottom: 15px;">🎯</div>
-                                <h4>Actionable Insights</h4>
-                                <p style="color: #666;">Every participant receives personalized recommendations based on their specific situation and goals.</p>
-                            </div>
-                            <div style="padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                                <div style="font-size: 3rem; margin-bottom: 15px;">🤝</div>
-                                <h4>Confidential Process</h4>
-                                <p style="color: #666;">All interviews are confidential, and company-specific information is anonymized in our research.</p>
-                            </div>
-                            <div style="padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                                <div style="font-size: 3rem; margin-bottom: 15px;">📊</div>
-                                <h4>Industry Benchmarks</h4>
-                                <p style="color: #666;">Compare your challenges and strategies against industry peers and successful market entrants.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </div>
+            </div>
+        </section>
     </main>
 
     <footer style="background: #1a1a2e; color: white; padding: 50px 0; text-align: center;">
@@ -716,6 +711,10 @@
 
             // Form label behavior for selects
             document.querySelectorAll('.form-select').forEach(select => {
+                 // fix for labels on page load if a value is pre-selected
+                if(select.value) {
+                    select.classList.add('filled');
+                }
                 select.addEventListener('change', function() {
                     if (this.value) {
                         this.classList.add('filled');
@@ -738,7 +737,7 @@
 
                     setTimeout(() => {
                         submitButton.style.background = '#27ae60';
-                        submitButton.innerHTML = '✅ Thank You! We'll be in touch.';
+                        submitButton.innerHTML = '✅ Thank You! We\'ll be in touch.';
                         
                         setTimeout(() => {
                              submitButton.innerHTML = originalText;
