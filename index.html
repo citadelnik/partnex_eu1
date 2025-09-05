@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>European Supply Chain Research</title>
+    <title>Reliable Supplier Research - For Buyers & Distributors</title>
     <style>
         * {
             margin: 0;
@@ -15,7 +15,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: #1a1a1a;
-            background: linear-gradient(135deg, #004e92 0%, #000428 100%);
+            background: linear-gradient(135deg, #2196F3 0%, #21CBF3 100%);
             overflow-x: hidden;
         }
 
@@ -48,7 +48,7 @@
         .logo {
             font-size: 24px;
             font-weight: 800;
-            background: linear-gradient(135deg, #004e92, #000428);
+            background: linear-gradient(135deg, #2196F3, #21CBF3);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -69,7 +69,7 @@
         }
 
         .nav-links a:hover {
-            color: #004e92;
+            color: #2196F3;
         }
 
         .nav-links a::after {
@@ -79,7 +79,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: linear-gradient(135deg, #004e92, #000428);
+            background: linear-gradient(135deg, #2196F3, #21CBF3);
             transition: width 0.3s ease;
         }
 
@@ -93,7 +93,7 @@
             display: flex;
             align-items: center;
             position: relative;
-            background: linear-gradient(135deg, #004e92 0%, #000428 100%);
+            background: linear-gradient(135deg, #2196F3 0%, #21CBF3 100%);
             overflow: hidden;
         }
 
@@ -118,7 +118,7 @@
         }
 
         .hero-text h1 {
-            font-size: clamp(2.5rem, 5vw, 3.8rem);
+            font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 800;
             color: white;
             margin-bottom: 30px;
@@ -169,10 +169,11 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+            margin-top: 60px;
         }
 
         .stat-card {
-            background: linear-gradient(135deg, #a8e6cf, #88d8a3);
+            background: linear-gradient(135deg, #FFE0B2, #FFCC80);
             backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 20px;
@@ -185,12 +186,12 @@
         .stat-number {
             font-size: 2.5rem;
             font-weight: 800;
-            color: #2c5530;
+            color: #E65100;
             display: block;
         }
 
         .stat-label {
-            color: #4a7c59;
+            color: #FF8F00;
             font-size: 0.9rem;
             margin-top: 5px;
             font-weight: 500;
@@ -212,7 +213,7 @@
             font-weight: 800;
             text-align: center;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #333, #004e92);
+            background: linear-gradient(135deg, #333, #2196F3);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -254,7 +255,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(135deg, #004e92, #000428);
+            background: linear-gradient(135deg, #2196F3, #21CBF3);
         }
 
         .challenge-card:hover {
@@ -265,14 +266,14 @@
         .challenge-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #a8e6cf, #88d8a3);
+            background: linear-gradient(135deg, #FFE0B2, #FFCC80);
             border-radius: 50%;
             margin: 0 auto 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2rem;
-            color: #2c5530;
+            color: #E65100;
         }
 
         .challenge-card h3 {
@@ -317,14 +318,14 @@
         .category-icon {
             width: 100px;
             height: 100px;
-            background: linear-gradient(135deg, #a8e6cf, #88d8a3);
+            background: linear-gradient(135deg, #FFE0B2, #FFCC80);
             border-radius: 50%;
             margin: 0 auto 25px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2.5rem;
-            color: #2c5530;
+            color: #E65100;
         }
 
         /* Interview Section */
@@ -359,13 +360,13 @@
         .feature-icon {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, #a8e6cf, #88d8a3);
+            background: linear-gradient(135deg, #FFE0B2, #FFCC80);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            color: #2c5530;
+            color: #E65100;
         }
 
         /* Form Section */
@@ -391,7 +392,7 @@
             left: 0;
             right: 0;
             height: 6px;
-            background: linear-gradient(135deg, #004e92, #000428);
+            background: linear-gradient(135deg, #2196F3, #21CBF3);
         }
 
         .form-grid {
@@ -422,36 +423,32 @@
 
         .form-input:focus, .form-select:focus, .form-textarea:focus {
             outline: none;
-            border-color: #004e92;
+            border-color: #2196F3;
             background: white;
-            box-shadow: 0 0 0 3px rgba(0, 78, 146, 0.1);
+            box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
         }
 
         .form-label {
             position: absolute;
-            top: 20px;
+            top: 50%;
             left: 20px;
-            transform: translateY(0);
+            transform: translateY(-50%);
             color: #666;
             font-weight: 500;
             transition: all 0.3s ease;
             pointer-events: none;
-            background: #f8f9ff;
+            background: white;
             padding: 0 8px;
         }
-       
-       .form-input:focus + .form-label,
-       .form-input:not(:placeholder-shown) + .form-label,
-       .form-select:valid + .form-label,
-       .form-textarea:focus + .form-label,
-       .form-textarea:not(:placeholder-shown) + .form-label {
-           top: 0;
-           transform: translateY(-50%);
-           font-size: 0.85rem;
-           color: #004e92;
-           background: white;
-       }
 
+        .form-input:focus + .form-label,
+        .form-input:not(:placeholder-shown) + .form-label,
+        .form-select:focus + .form-label,
+        .form-textarea:focus + .form-label {
+            top: 0;
+            font-size: 0.85rem;
+            color: #2196F3;
+        }
 
         .form-textarea {
             height: 120px;
@@ -460,7 +457,7 @@
 
         .submit-button {
             width: 100%;
-            background: linear-gradient(135deg, #004e92, #000428);
+            background: linear-gradient(135deg, #2196F3, #21CBF3);
             color: white;
             border: none;
             padding: 20px 40px;
@@ -475,132 +472,303 @@
 
         .submit-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 20px 40px rgba(0, 78, 146, 0.4);
+            box-shadow: 0 20px 40px rgba(33, 150, 243, 0.4);
+        }
+
+        .submit-button:active {
+            transform: translateY(0);
         }
 
         /* Animations */
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes fadeInRight { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
-        @keyframes slideDown { from { transform: translateY(-100%); } to { transform: translateY(0); } }
-        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
-        .floating { animation: float 6s ease-in-out infinite; }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
 
         /* Responsive Design */
         @media (max-width: 968px) {
-            .hero-content, .interview-content, .form-grid, .companies-grid, div[style*="grid-template-columns: repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
-            .hero-content { text-align: center; gap: 40px; }
-            .nav-links { display: none; }
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .companies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .interview-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            /* Research Promise section mobile */
+            .animate-on-scroll div[style*="grid-template-columns: repeat(3, 1fr)"] {
+                grid-template-columns: 1fr !important;
+            }
         }
 
         @media (max-width: 768px) {
-            .stats-grid, .challenges-grid { grid-template-columns: 1fr; }
-            .form-container { padding: 40px 30px; margin: 0 20px; }
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .challenges-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-container {
+                padding: 40px 30px;
+                margin: 0 20px;
+            }
         }
 
         /* Scroll animations */
-        .animate-on-scroll { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
-        .animate-on-scroll.animated { opacity: 1; transform: translateY(0); }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav class="nav container">
-            <div class="logo">EuroSource Research</div>
+            <div class="logo">SupplierFind Research</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#challenges">Challenges</a></li>
-                <li><a href="#industries">Industries</a></li>
+                <li><a href="#categories">Categories</a></li>
                 <li><a href="#interview">Interview</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Is finding trustworthy suppliers in Europe slowing your business down?</h1>
-                    <p>Join our exclusive research on B2B procurement. Help us understand the real challenges of sourcing in Europe and get valuable insights to build a more resilient and sustainable supply chain.</p>
+                    <h1>Struggling to find reliable suppliers?</h1>
+                    <p>Join our exclusive research study on supplier sourcing challenges. Share your experience as a buyer or distributor in a 15-minute interview and get valuable industry insights.</p>
                     <a href="#contact" class="cta-button">
-                        📞 Share Your Sourcing Experience
+                        📞 Schedule Interview
                         <span>→</span>
                     </a>
                 </div>
                 <div class="hero-visual">
                     <div class="stats-grid floating">
-                        <div class="stat-card"><span class="stat-number">500+</span><span class="stat-label">Companies Interviewed</span></div>
-                        <div class="stat-card"><span class="stat-number">27</span><span class="stat-label">EU Countries Covered</span></div>
-                        <div class="stat-card"><span class="stat-number">92%</span><span class="stat-label">Sourcing Efficiency Reported</span></div>
-                        <div class="stat-card"><span class="stat-number">30 min</span><span class="stat-label">Interview Duration</span></div>
+                        <div class="stat-card">
+                            <span class="stat-number">750+</span>
+                            <span class="stat-label">Buyers Interviewed</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">45</span>
+                            <span class="stat-label">Industries Covered</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">92%</span>
+                            <span class="stat-label">Found Better Suppliers</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">15 min</span>
+                            <span class="stat-label">Interview Duration</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Main Content -->
     <main class="main-content">
+        <!-- Challenges Section -->
         <section class="section" id="challenges">
             <div class="container">
-                <h2 class="section-title animate-on-scroll">The Core Sourcing Challenges We're Investigating</h2>
-                <p class="section-subtitle animate-on-scroll">Understanding the key barriers to building efficient, resilient, and sustainable supply chains in Europe.</p>
+                <h2 class="section-title animate-on-scroll">Common Sourcing Challenges We're Investigating</h2>
+                <p class="section-subtitle animate-on-scroll">Understanding the key obstacles buyers and distributors face when finding reliable suppliers</p>
+                
                 <div class="challenges-grid">
                     <div class="challenge-card animate-on-scroll">
-                        <div class="challenge-icon">🛡️</div>
-                        <h3>Supplier Reliability & Risk</h3>
-                        <p>Managing the time-consuming process of vetting new suppliers, verifying certifications, and mitigating risks of disruption in your supply chain.</p>
+                        <div class="challenge-icon">🔍</div>
+                        <h3>Supplier Discovery</h3>
+                        <p>Finding qualified suppliers, verifying credentials, and accessing global supplier networks beyond obvious platforms.</p>
                     </div>
                     <div class="challenge-card animate-on-scroll">
-                        <div class="challenge-icon">🌿</div>
-                        <h3>ESG & Sustainability Compliance</h3>
-                        <p>Navigating the complex requirements of the EU Green Deal, tracking supplier sustainability metrics, and ensuring your supply chain is compliant and ethical.</p>
+                        <div class="challenge-icon">⚖️</div>
+                        <h3>Quality Assurance</h3>
+                        <p>Ensuring product quality, managing quality control processes, and maintaining consistent standards across suppliers.</p>
                     </div>
                     <div class="challenge-card animate-on-scroll">
-                        <div class="challenge-icon">🔗</div>
-                        <h3>Supply Chain Resilience</h3>
-                        <p>Diversifying your supplier base to avoid single points of failure, adapting to geopolitical shifts, and building a supply network that can withstand shocks.</p>
+                        <div class="challenge-icon">🤝</div>
+                        <h3>Trust & Reliability</h3>
+                        <p>Building trust with new suppliers, managing payment terms, and ensuring reliable delivery schedules.</p>
                     </div>
                     <div class="challenge-card animate-on-scroll">
-                        <div class="challenge-icon">💡</div>
-                        <h3>Sourcing Innovation</h3>
-                        <p>Discovering innovative suppliers with cutting-edge technology, new materials, or more efficient processes to gain a competitive advantage.</p>
+                        <div class="challenge-icon">💰</div>
+                        <h3>Cost Management</h3>
+                        <p>Negotiating competitive prices, managing total cost of ownership, and balancing cost with quality requirements.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section companies-section" id="industries">
+        <!-- Categories Section -->
+        <section class="section companies-section" id="categories">
             <div class="container">
-                <h2 class="section-title animate-on-scroll">We're interviewing buyers and distributors from:</h2>
+                <h2 class="section-title animate-on-scroll">Looking for buyers & distributors in:</h2>
+                
                 <div class="companies-grid">
-                     <div class="company-category animate-on-scroll"><div class="category-icon">💊</div><h3>Healthcare & Medical</h3><p>Distributors, hospital procurement, med-tech companies</p></div>
-                     <div class="company-category animate-on-scroll"><div class="category-icon">🏭</div><h3>Manufacturing & Industrial</h3><p>OEMs, factory procurement, heavy machinery buyers</p></div>
-                     <div class="company-category animate-on-scroll"><div class="category-icon">💻</div><h3>Technology & Software</h3><p>Hardware manufacturers, system integrators, large IT departments</p></div>
+                    <div class="company-category animate-on-scroll">
+                        <div class="category-icon">🏪</div>
+                        <h3>Retail & E-commerce</h3>
+                        <p>Online retailers, marketplace sellers, brick-and-mortar stores, specialty retail chains</p>
+                    </div>
+                    <div class="company-category animate-on-scroll">
+                        <div class="category-icon">🏭</div>
+                        <h3>Manufacturing & Industrial</h3>
+                        <p>Component buyers, raw material sourcing, industrial equipment procurement</p>
+                    </div>
+                    <div class="company-category animate-on-scroll">
+                        <div class="category-icon">🚚</div>
+                        <h3>Distribution & Wholesale</h3>
+                        <p>Wholesale distributors, import/export companies, regional distribution networks</p>
+                    </div>
+                </div>
+
+                <div class="companies-grid" style="margin-top: 40px;">
+                    <div class="company-category animate-on-scroll">
+                        <div class="category-icon">🏥</div>
+                        <h3>Healthcare & Medical</h3>
+                        <p>Medical device buyers, pharmaceutical procurement, healthcare supply chain managers</p>
+                    </div>
+                    <div class="company-category animate-on-scroll">
+                        <div class="category-icon">🍽️</div>
+                        <h3>Food & Beverage</h3>
+                        <p>Food service distributors, restaurant chain buyers, specialty food importers</p>
+                    </div>
+                    <div class="company-category animate-on-scroll">
+                        <div class="category-icon">💻</div>
+                        <h3>Technology & Electronics</h3>
+                        <p>Tech component buyers, electronics distributors, IT equipment procurement</p>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Interview Section -->
         <section class="section interview-section" id="interview">
             <div class="container">
                 <div class="interview-content">
                     <div class="animate-on-scroll">
-                        <h2 class="section-title" style="text-align: left; color: white;">Share Your Experience in a 30-Minute Sourcing Interview</h2>
-                        <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 40px;">Help us map the future of B2B procurement and get valuable benchmarks for your own sourcing strategy.</p>
+                        <h2 class="section-title" style="text-align: left; color: white;">Share Your Sourcing Experience in 15-Minute Interview</h2>
+                        <p style="font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 40px;">Help us understand real supplier sourcing challenges while getting access to industry benchmarks and best practices.</p>
+                        
                         <ul class="interview-features">
-                            <li><div class="feature-icon">⏱️</div><div><strong>Quick & Efficient</strong><br>Only 30 minutes of your time via video call</div></li>
-                            <li><div class="feature-icon">🎯</div><div><strong>Personalized Insights</strong><br>Get tailored recommendations for your sourcing challenges</div></li>
-                            <li><div class="feature-icon">🤝</div><div><strong>Confidential & Secure</strong><br>Your data is protected and anonymized</div></li>
-                            <li><div class="feature-icon">📊</div><div><strong>Research Results</strong><br>Access to final study findings and benchmarks</div></li>
+                            <li>
+                                <div class="feature-icon">⏱️</div>
+                                <div>
+                                    <strong>Quick & Efficient</strong><br>
+                                    Only 15 minutes of your time via video call
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon">🎯</div>
+                                <div>
+                                    <strong>Sourcing Insights</strong><br>
+                                    Get personalized supplier discovery strategies
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon">🤝</div>
+                                <div>
+                                    <strong>Confidential & Secure</strong><br>
+                                    Your sourcing data is protected and anonymized
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon">📊</div>
+                                <div>
+                                    <strong>Industry Benchmarks</strong><br>
+                                    Access to final study with sourcing best practices
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="animate-on-scroll">
-                        <div style="background: linear-gradient(135deg, #a8e6cf, #88d8a3); border-radius: 20px; padding: 40px; text-align: center; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);">
-                            <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: #2c5530;">What we'll discuss:</h3>
+                        <div style="background: linear-gradient(135deg, #FFE0B2, #FFCC80); backdrop-filter: blur(20px); border-radius: 20px; padding: 40px; text-align: center; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);">
+                            <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: #E65100;">What we'll discuss:</h3>
                             <div style="display: grid; gap: 15px; text-align: left;">
-                                <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">Your strategy for finding and vetting new European suppliers</span></div>
-                                <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">The biggest risks you face in your current supply chain</span></div>
-                                <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">The role of sustainability (ESG) in your procurement process</span></div>
-                                <div style="display: flex; align-items: center; gap: 10px;"><span style="color: #2c5530; font-weight: bold;">✓</span><span style="color: #4a7c59;">Tools and platforms you currently use for supplier management</span></div>
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <span style="color: #E65100; font-weight: bold;">✓</span>
+                                    <span style="color: #FF8F00;">Your current supplier sourcing processes</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <span style="color: #E65100; font-weight: bold;">✓</span>
+                                    <span style="color: #FF8F00;">Biggest challenges in finding reliable suppliers</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <span style="color: #E65100; font-weight: bold;">✓</span>
+                                    <span style="color: #FF8F00;">Successful strategies and tools you use</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <span style="color: #E65100; font-weight: bold;">✓</span>
+                                    <span style="color: #FF8F00;">What would make supplier discovery easier</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -608,43 +776,137 @@
             </div>
         </section>
 
+        <!-- Form Section -->
         <section class="section form-section" id="contact">
             <div class="container">
-                <h2 class="section-title animate-on-scroll">Schedule Your Sourcing Interview</h2>
-                <p class="section-subtitle animate-on-scroll">Book a 30-minute slot and contribute to groundbreaking research on the future of European procurement.</p>
+                <h2 class="section-title animate-on-scroll">Schedule Your Interview</h2>
+                <p class="section-subtitle animate-on-scroll">Book your 15-minute interview and contribute to groundbreaking research on supplier sourcing</p>
+                
                 <div class="form-container animate-on-scroll">
                     <form id="interviewForm">
                         <div class="form-grid">
-                            <div class="form-group"><input type="text" id="firstName" class="form-input" placeholder=" " required><label for="firstName" class="form-label">First Name</label></div>
-                            <div class="form-group"><input type="text" id="lastName" class="form-input" placeholder=" " required><label for="lastName" class="form-label">Last Name</label></div>
-                            <div class="form-group"><input type="email" id="email" class="form-input" placeholder=" " required><label for="email" class="form-label">Email Address</label></div>
-                            <div class="form-group"><input type="tel" id="phone" class="form-input" placeholder=" "><label for="phone" class="form-label">Phone Number (Optional)</label></div>
-                            <div class="form-group"><input type="text" id="company" class="form-input" placeholder=" " required><label for="company" class="form-label">Company Name</label></div>
-                            <div class="form-group"><input type="text" id="position" class="form-input" placeholder=" " required><label for="position" class="form-label">Your Position</label></div>
+                            <div class="form-group">
+                                <input type="text" id="firstName" class="form-input" placeholder=" " required>
+                                <label for="firstName" class="form-label">First Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" class="form-input" placeholder=" " required>
+                                <label for="lastName" class="form-label">Last Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-input" placeholder=" " required>
+                                <label for="email" class="form-label">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" class="form-input" placeholder=" ">
+                                <label for="phone" class="form-label">Phone Number</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="company" class="form-input" placeholder=" " required>
+                                <label for="company" class="form-label">Company Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="position" class="form-input" placeholder=" " required>
+                                <label for="position" class="form-label">Your Position</label>
+                            </div>
                             <div class="form-group full-width">
-                                <select id="industry" class="form-select" required><option value="" disabled selected></option><option value="healthcare">Healthcare & Medical</option><option value="manufacturing">Manufacturing & Industrial</option><option value="technology">Technology & Software</option><option value="other">Other</option></select>
+                                <select id="industry" class="form-select" required>
+                                    <option value="">Select your industry</option>
+                                    <option value="retail">Retail & E-commerce</option>
+                                    <option value="manufacturing">Manufacturing & Industrial</option>
+                                    <option value="distribution">Distribution & Wholesale</option>
+                                    <option value="healthcare">Healthcare & Medical</option>
+                                    <option value="food">Food & Beverage</option>
+                                    <option value="technology">Technology & Electronics</option>
+                                    <option value="other">Other</option>
+                                </select>
                                 <label for="industry" class="form-label">Industry</label>
                             </div>
                             <div class="form-group">
-                                <select id="companySize" class="form-select" required><option value="" disabled selected></option><option value="small">Small (11-50)</option><option value="medium">Medium (51-200)</option><option value="large">Large (201+)</option></select>
+                                <select id="companySize" class="form-select" required>
+                                    <option value="">Select company size</option>
+                                    <option value="startup">Startup (1-10 employees)</option>
+                                    <option value="small">Small (11-50 employees)</option>
+                                    <option value="medium">Medium (51-200 employees)</option>
+                                    <option value="large">Large (200+ employees)</option>
+                                </select>
                                 <label for="companySize" class="form-label">Company Size</label>
                             </div>
                             <div class="form-group">
-                                <select id="sourcingStage" class="form-select" required><option value="" disabled selected></option><option value="new_suppliers">Seeking new suppliers</option><option value="optimizing">Optimizing supplier base</option><option value="resilience">Building resilience</option><option value="sustainability">Focusing on ESG</option></select>
-                                <label for="sourcingStage" class="form-label">Sourcing Focus</label>
+                                <select id="buyingStage" class="form-select" required>
+                                    <option value="">Select your buying role</option>
+                                    <option value="procurement">Procurement Manager</option>
+                                    <option value="buyer">Professional Buyer</option>
+                                    <option value="distributor">Distributor/Wholesaler</option>
+                                    <option value="sourcing">Sourcing Specialist</option>
+                                    <option value="owner">Business Owner</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <label for="buyingStage" class="form-label">Your Role in Buying</label>
                             </div>
                             <div class="form-group full-width">
                                 <textarea id="challenges" class="form-textarea" placeholder=" "></textarea>
-                                <label for="challenges" class="form-label">Your main procurement challenges? (Optional)</label>
+                                <label for="challenges" class="form-label">What are your main challenges in finding suppliers? (Optional)</label>
                             </div>
                         </div>
-                        <button type="submit" class="submit-button">📅 Schedule My Interview Now</button>
-                        <p style="text-align: center; margin-top: 20px; color: #666; font-size: 0.9rem;">🔒 Your information is secure and will only be used for research purposes.</p>
+                        
+                        <div style="margin-bottom: 30px;">
+                            <h4 style="margin-bottom: 20px; color: #333;">Preferred Interview Time:</h4>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+                                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                    <input type="checkbox" name="timeSlot" value="morning" style="width: 18px; height: 18px;">
+                                    <span>Morning (9:00-12:00 EST)</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                    <input type="checkbox" name="timeSlot" value="afternoon" style="width: 18px; height: 18px;">
+                                    <span>Afternoon (12:00-17:00 EST)</span>
+                                </label>
+                                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                    <input type="checkbox" name="timeSlot" value="evening" style="width: 18px; height: 18px;">
+                                    <span>Evening (17:00-20:00 EST)</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div style="background: linear-gradient(135deg, #E3F2FD, #BBDEFB); border-radius: 15px; padding: 25px; margin-bottom: 30px; border-left: 4px solid #2196F3;">
+                            <h4 style="color: #333; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 1.5rem;">🎁</span>
+                                What You'll Receive:
+                            </h4>
+                            <ul style="list-style: none; padding: 0; margin: 0;">
+                                <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                    <span style="color: #2196F3; font-weight: bold;">✓</span>
+                                    <span>Personalized supplier sourcing strategies</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                    <span style="color: #2196F3; font-weight: bold;">✓</span>
+                                    <span>Access to final research report with industry benchmarks</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                                    <span style="color: #2196F3; font-weight: bold;">✓</span>
+                                    <span>Early access to supplier discovery tools and platforms</span>
+                                </li>
+                                <li style="display: flex; align-items: center; gap: 10px;">
+                                    <span style="color: #2196F3; font-weight: bold;">✓</span>
+                                    <span>Network connection opportunities with other buyers</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            📅 Schedule My Interview Now
+                        </button>
+
+                        <p style="text-align: center; margin-top: 20px; color: #666; font-size: 0.9rem;">
+                            🔒 Your information is secure and will only be used for research purposes. 
+                            We'll contact you within 24 hours to confirm your interview slot.
+                        </p>
                     </form>
                 </div>
             </div>
         </section>
 
+        <!-- Research Promise Section -->
         <section class="section" style="background: linear-gradient(135deg, #f8f9ff, #fff); text-align: center;">
             <div class="container">
                 <div style="max-width: 800px; margin: 0 auto;" class="animate-on-scroll">
@@ -653,17 +915,71 @@
                         <div style="padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                             <div style="font-size: 3rem; margin-bottom: 15px;">🎯</div>
                             <h4>Actionable Insights</h4>
-                            <p style="color: #666;">Every participant receives personalized recommendations based on their specific situation and goals.</p>
+                            <p style="color: #666;">Every participant receives personalized supplier sourcing recommendations based on their specific needs and challenges.</p>
                         </div>
                         <div style="padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                             <div style="font-size: 3rem; margin-bottom: 15px;">🤝</div>
                             <h4>Confidential Process</h4>
-                            <p style="color: #666;">All interviews are confidential, and company-specific information is anonymized in our research.</p>
+                            <p style="color: #666;">All interviews are confidential, and company-specific sourcing information is anonymized in our research.</p>
                         </div>
                         <div style="padding: 30px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                             <div style="font-size: 3rem; margin-bottom: 15px;">📊</div>
                             <h4>Industry Benchmarks</h4>
-                            <p style="color: #666;">Compare your challenges and strategies against industry peers and successful market entrants.</p>
+                            <p style="color: #666;">Compare your sourcing challenges and strategies against industry peers and successful buyers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Research Section -->
+        <section class="section" style="background: linear-gradient(135deg, #1a1a2e, #16213e); color: white;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                    <div class="animate-on-scroll">
+                        <h2 style="color: white; font-size: 2.5rem; margin-bottom: 30px;">About the Research</h2>
+                        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px; color: rgba(255,255,255,0.9);">
+                            This comprehensive study aims to identify and address the most significant challenges buyers and distributors face when sourcing reliable suppliers. Our research will help create better tools, platforms, and strategies for efficient supplier discovery.
+                        </p>
+                        <div style="background: linear-gradient(135deg, #FFE0B2, #FFCC80); backdrop-filter: blur(20px); border-radius: 15px; padding: 25px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);">
+                            <h4 style="margin-bottom: 15px; color: #E65100;">Research Timeline:</h4>
+                            <div style="display: grid; gap: 10px;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <div style="width: 30px; height: 30px; background: #E65100; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: bold; color: #FFE0B2;">1</div>
+                                    <span style="color: #FF8F00;">Interviews: January 2025 - March 2025</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <div style="width: 30px; height: 30px; background: #E65100; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: bold; color: #FFE0B2;">2</div>
+                                    <span style="color: #FF8F00;">Analysis & Report: April 2025</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <div style="width: 30px; height: 30px; background: #E65100; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; font-weight: bold; color: #FFE0B2;">3</div>
+                                    <span style="color: #FF8F00;">Results Sharing: May 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="animate-on-scroll" style="text-align: center;">
+                        <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border-radius: 25px; padding: 50px 40px;">
+                            <h3 style="font-size: 2rem; margin-bottom: 30px;">Join 750+ Buyers</h3>
+                            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px;">
+                                <div style="text-align: center;">
+                                    <div style="font-size: 2.5rem; font-weight: 800; color: #21CBF3;">96%</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Found insights valuable</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 2.5rem; font-weight: 800; color: #21CBF3;">4.9/5</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Average rating</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 2.5rem; font-weight: 800; color: #21CBF3;">68%</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Improved supplier quality</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-size: 2.5rem; font-weight: 800; color: #21CBF3;">3x</div>
+                                    <div style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Faster sourcing process</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -671,86 +987,150 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer style="background: #1a1a2e; color: white; padding: 50px 0; text-align: center;">
         <div class="container">
-             <div style="margin-bottom: 40px;">
-                <div class="logo" style="color: white; background: none; -webkit-text-fill-color: unset;">EuroSource Research</div>
-             </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h4 style="margin-bottom: 20px;">Contact</h4>
+                    <p>📧 research@supplierfind.com</p>
+                    <p>📞 +1 (555) 123-4567</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px;">Privacy</h4>
+                    <p>🔒 All interviews are confidential</p>
+                    <p>📊 Data is anonymized and secure</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px;">Follow Up</h4>
+                    <p>⏱️ 24-hour response time</p>
+                    <p>📅 Flexible scheduling available</p>
+                </div>
+            </div>
             <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 30px;">
-                <p>&copy; 2025 European Sourcing Research Study. All rights reserved.</p>
-                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.5); margin-top: 10px;">Contact: research@eurosource.com</p>
+                <p>&copy; 2024 Supplier Sourcing Research Study. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Smooth scrolling
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        const headerHeight = document.querySelector('header').offsetHeight;
-                        const targetPosition = target.offsetTop - headerHeight;
-                        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-                    }
-                });
-            });
-
-            // Scroll animations
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animated');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-            document.querySelectorAll('.animate-on-scroll').forEach(el => { observer.observe(el); });
-
-            // Form label behavior for selects
-            document.querySelectorAll('.form-select').forEach(select => {
-                 // fix for labels on page load if a value is pre-selected
-                if(select.value) {
-                    select.classList.add('filled');
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
                 }
-                select.addEventListener('change', function() {
-                    if (this.value) {
-                        this.classList.add('filled');
-                    } else {
-                        this.classList.remove('filled');
-                    }
-                });
             });
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form handling
+        document.getElementById('interviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
             
-            // Form submission simulation
-            const form = document.getElementById('interviewForm');
-            if(form) {
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    const submitButton = this.querySelector('.submit-button');
-                    const originalText = submitButton.innerHTML;
-                    
-                    submitButton.innerHTML = 'Scheduling...';
-                    submitButton.disabled = true;
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Get selected time slots
+            const timeSlots = [];
+            document.querySelectorAll('input[name="timeSlot"]:checked').forEach(checkbox => {
+                timeSlots.push(checkbox.value);
+            });
+            data.timeSlots = timeSlots;
 
-                    setTimeout(() => {
-                        submitButton.style.background = '#27ae60';
-                        submitButton.innerHTML = '✅ Thank You! We\'ll be in touch.';
-                        
-                        setTimeout(() => {
-                             submitButton.innerHTML = originalText;
-                             submitButton.style.background = '';
-                             submitButton.disabled = false;
-                             form.reset();
-                             // remove filled class from selects on reset
-                             document.querySelectorAll('.form-select').forEach(s => s.classList.remove('filled'));
-                        }, 5000);
+            // Simulate form submission
+            const submitButton = document.querySelector('.submit-button');
+            const originalText = submitButton.innerHTML;
+            
+            submitButton.innerHTML = '⏳ Scheduling Interview...';
+            submitButton.style.background = '#95a5a6';
+            submitButton.disabled = true;
 
-                    }, 2000);
-                });
+            setTimeout(() => {
+                submitButton.innerHTML = '✅ Interview Scheduled Successfully!';
+                submitButton.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+                
+                // Show success message
+                const successMessage = document.createElement('div');
+                successMessage.style.cssText = `
+                    background: linear-gradient(135deg, #d4edda, #c3e6cb);
+                    border: 2px solid #28a745;
+                    border-radius: 15px;
+                    padding: 25px;
+                    margin-top: 25px;
+                    text-align: center;
+                    animation: fadeInUp 0.5s ease;
+                `;
+                successMessage.innerHTML = `
+                    <h4 style="color: #155724; margin-bottom: 10px;">🎉 Thank You for Signing Up!</h4>
+                    <p style="color: #155724; margin: 0;">We'll contact you within 24 hours to confirm your interview slot. Check your email for confirmation details.</p>
+                `;
+                
+                document.querySelector('.form-container').appendChild(successMessage);
+                
+                // Reset form after a delay
+                setTimeout(() => {
+                    this.reset();
+                    submitButton.innerHTML = originalText;
+                    submitButton.style.background = 'linear-gradient(135deg, #2196F3, #21CBF3)';
+                    submitButton.disabled = false;
+                    successMessage.remove();
+                }, 5000);
+            }, 2000);
+        });
+
+        // Header background change on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 5px 30px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = 'none';
             }
+        });
+
+        // Add floating animation to stats
+        document.querySelectorAll('.stat-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        // Enhanced form validation
+        const inputs = document.querySelectorAll('.form-input, .form-select');
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim() !== '') {
+                    this.classList.add('filled');
+                } else {
+                    this.classList.remove('filled');
+                }
+            });
         });
     </script>
 </body>
